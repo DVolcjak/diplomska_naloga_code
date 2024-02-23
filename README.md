@@ -22,5 +22,5 @@ V repozitoriju so implementacije algoritmov, ki sem jih naredil v okviru diploms
 ### `wfa.py` 
 - v datoteki so implementirani algoritem delovne funkcije, prilagojeni algoritem delovne funkcije, hitri algoritem delovne funkcije
 
-### `radnom.py` 
+### `random.py` 
 - v datoteki je implementiran naključni algoritem
