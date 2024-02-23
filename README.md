@@ -5,7 +5,7 @@ V repozitoriju so implementacije algoritmov, ki sem jih naredil v okviru diploms
 ## Datoteke v projektu
 
 ### `diplomska_main.py` 
-- datoteka vsebuje ustvarjanje lokacij ter naključnega zaporedja zahtev, klice posameznih funkcij algoritmov ter računanje njihovih konkurenčnih razmerij
+- datoteka vsebuje klice funkcij za ustvarjanje podatkov, klice posameznih funkcij algoritmov ter računanje njihovih konkurenčnih razmerij
 
 ### `generate_data.py` 
 - datoteka vsebuje naključno ustvarjanje lokacij ter računanje razdalj med njimi
