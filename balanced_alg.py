@@ -28,32 +28,10 @@ def balanced_algorithm(requests, server_loc, distance_matrix):
                 min_distance = cum_dist
                 old_serv_loc_ind = serv_ind
 
-        """ print(min_distance, old_serv_loc_ind)
-
-        min_distance, old_serv_loc_ind = min(
-            enumerate(server_loc),
-            key=lambda x: (distance_matrix[x[1]][request_loc] + distances[x[0]], x[0]) if distance_matrix[x[1]][request_loc] != 0 else (distances[x[0]], x[0])
-        )
-
-        min_distance, old_serv_loc_ind = min(
-            enumerate(server_loc),
-            key=lambda x: (distances[x[0]] if distance_matrix[x[1]][request_loc] == 0 else distances[x[0]] + distance_matrix[x[1]][request_loc], x[0])
-        )
-
-        print(min_distance, old_serv_loc_ind)
-
-        min_distance, old_serv_loc_ind = min(
-            ((distances[serv_ind] + distance_matrix[serv][request_loc], serv_ind) for serv_ind, serv in enumerate(server_loc)),
-            key=lambda x: (x[0] if x[0] != 0 else float('inf'), x[1])
-        )
-        """
 
         if not dist_is_zero:
             server_loc[old_serv_loc_ind] = request_loc
             distances[old_serv_loc_ind] = min_distance
-
-        """ server_loc[old_serv_loc_ind] = request_loc
-        distances[old_serv_loc_ind] = min_distance """
 
     cost += sum(distances)
 
